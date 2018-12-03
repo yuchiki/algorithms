@@ -1,6 +1,5 @@
-﻿using System;
-
-namespace Algorithms {
+﻿namespace Algorithms {
+    using System;
     using static BinarySearchClass;
 
     public static class BinarySearchClass {
