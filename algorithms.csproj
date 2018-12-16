@@ -6,5 +6,6 @@
   <ItemGroup>
     <Content Include="BinarySearch.cs" />
     <Content Include="Multiset.cs" />
+    <Content Include="SortedMultiSet.cs" />
   </ItemGroup>
 </Project>
