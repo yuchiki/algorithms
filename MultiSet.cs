@@ -4,17 +4,17 @@ namespace Collections {
     using System.Linq;
     using System;
 
-    class Multiset<T> : ICollection<T> {
+    class MultiSet<T> : ICollection<T> {
         // TODO: 順番がグチャグチャなので整理する
         Dictionary<T, int> occurrence;
 
-        public Multiset(Multiset<T> source) : this(source.occurrence) {}
-        public Multiset(Dictionary<T, int> source) {
+        public MultiSet(MultiSet<T> source) : this(source.occurrence) {}
+        public MultiSet(Dictionary<T, int> source) {
             occurrence = new Dictionary<T, int>(source);
             Validate();
         }
 
-        public Multiset(IEnumerable<T> source) {
+        public MultiSet(IEnumerable<T> source) {
             occurrence = new Dictionary<T, int>();
             AddRange(source);
         }
